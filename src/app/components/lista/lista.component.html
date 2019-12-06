@@ -1,0 +1,16 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">nombre</th>
+            <th scope="col">descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let peli of listado; let i = index" class="item" (click)="obtenerPeli(i)">
+            <th scope="row">{{i}}</th>
+            <td>{{peli.nombre}}</td>
+            <td>{{peli.descripcion}}</td>
+        </tr>
+    </tbody>
+</table>
